@@ -9,9 +9,12 @@ D:\tools\apache-jmeter-3.3\bin\libxslt\bin\xsltproc D:\tools\apache-jmeter-3.3\b
 
 安装startup-trigger-plugin和Groovy插件
 
-Execute system Groovy script
-  Groovy command
-    System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+>构建触发器
+  >>Build when job nodes start
+
+>Execute system Groovy script
+  >>Groovy command
+    >>>System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 
 
 
