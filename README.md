@@ -16,7 +16,7 @@ D:\tools\apache-jmeter-3.3\bin\libxslt\bin\xsltproc D:\tools\apache-jmeter-3.3\b
   >>Groovy command
     >>>System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 
-
+javaw -jar -Dhudson.model.DirectoryBrowserSupport.CSP= jenkins.war --httpPort=8001
 
 
 
