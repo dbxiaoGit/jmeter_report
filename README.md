@@ -18,7 +18,8 @@ D:\tools\apache-jmeter-3.3\bin\libxslt\bin\xsltproc D:\tools\apache-jmeter-3.3\b
 
 javaw -jar -Dhudson.model.DirectoryBrowserSupport.CSP= jenkins.war --httpPort=8001
 
-
+>export JAVA_HOME="/home/qa_test/jdk1.8.0_172"
+>export PATH＝$JAVA_HOME/bin:$PATH
 
 
 
