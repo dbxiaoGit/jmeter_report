@@ -22,9 +22,18 @@ javaw -jar -Dhudson.model.DirectoryBrowserSupport.CSP= jenkins.war --httpPort=80
 * export PATH＝$JAVA_HOME/bin:$PATH
 
 
+* 构建-Invoke Ant-
+* build file = build.xml
+* Properties =
+jmeter.home=/home/oracle/tools/apache-jmeter-5.0
+report.title=jmeter_task_demo
+show-data=y
+test=jmeter_task_demo
 
-
-
+* 构建后操作
+归档成品-用于存档的文件	= *.html
+* Editable Email Notification - Default Content	 = 
+${BUILD_URL}artifact/${JOB_NAME}.html 
 
 
 
