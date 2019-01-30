@@ -26,9 +26,9 @@ javaw -jar -Dhudson.model.DirectoryBrowserSupport.CSP= jenkins.war --httpPort=80
 * build file = build.xml
 * Properties =
 jmeter.home=/home/oracle/tools/apache-jmeter-5.0
-report.title=jmeter_task_demo
+report.title=${JOB_NAME}
 show-data=y
-test=jmeter_task_demo
+test=${JOB_NAME}
 
 * 构建后操作
 归档成品-用于存档的文件	= *.html
