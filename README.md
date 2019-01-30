@@ -21,7 +21,7 @@ javaw -jar -Dhudson.model.DirectoryBrowserSupport.CSP= jenkins.war --httpPort=80
 * export JAVA_HOME="/home/xxx/jdk1.8.0_172"
 * export PATH＝$JAVA_HOME/bin:$PATH
 
-
+* ==========================================================================================
 * 构建-Invoke Ant-
 * build file = build.xml
 * Properties =
