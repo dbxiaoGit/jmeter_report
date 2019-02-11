@@ -36,6 +36,7 @@ test=${JOB_NAME}
 ${BUILD_URL}artifact/${JOB_NAME}.html 
 
 
+* export GREP_OPTIONS='--color=auto' GREP_COLOR='36'
 
 
 
