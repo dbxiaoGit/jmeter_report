@@ -38,6 +38,13 @@ ${BUILD_URL}artifact/${JOB_NAME}.html
 
 * export GREP_OPTIONS='--color=auto' GREP_COLOR='36'
 
-
+grep -E "<failure>true</failure>|<error>true</error>" ${WORKSPACE}/${JOB_NAME}.jtl
+if [ $? -eq 0 ]; then
+    echo "fail"
+    exit 1
+else
+    echo "success"
+    exit 0
+fi
 
 
