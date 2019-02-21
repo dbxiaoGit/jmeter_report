@@ -17,17 +17,21 @@ D:\tools\apache-jmeter-3.3\bin\libxslt\bin\xsltproc D:\tools\apache-jmeter-3.3\b
     >>>System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 
 javaw -jar -Dhudson.model.DirectoryBrowserSupport.CSP= jenkins.war --httpPort=8001
+***
+export JAVA_HOME="/home/xxx/jdk1.8.0_172"
 
-* export JAVA_HOME="/home/xxx/jdk1.8.0_172"
-* export PATH＝$JAVA_HOME/bin:$PATH
-
-* ==========================================================================================
+export PATH＝$JAVA_HOME/bin:$PATH
+***
+***
 * 构建-Invoke Ant-
 * build file = build.xml
 * Properties =
 jmeter.home=/home/oracle/tools/apache-jmeter-5.0
+
 report.title=${JOB_NAME}
+
 show-data=y
+
 test=${JOB_NAME}
 
 * 构建后操作
@@ -35,9 +39,9 @@ test=${JOB_NAME}
 * Editable Email Notification - Default Content	 = 
 ${BUILD_URL}artifact/${JOB_NAME}.html 
 
-
-* export GREP_OPTIONS='--color=auto' GREP_COLOR='36'
-
+***
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;33'
+***
 grep -E "<failure>true</failure>|<error>true</error>" ${WORKSPACE}/${JOB_NAME}.jtl
 if [ $? -eq 0 ]; then
     echo "fail"
